@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     getUserData() {
-      this.$axios.get('/userListOf5.json').then((res) => {
+      this.$axios.get('https://uiharuayako.github.io/reg_form/userListOf5.json').then((res) => {
         this.userData = res.data;
         console.log(res.data)
       }).catch((error) => {
