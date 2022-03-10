@@ -6,7 +6,6 @@ import router from './router'
 import Axios from "axios";
 Vue.use(Antd);
 Vue.config.productionTip = false
-Axios.defaults.baseURL = '/api'
 Vue.prototype.$axios = Axios
 new Vue({
   router,
