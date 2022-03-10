@@ -19,6 +19,7 @@
 <script>
 
 export default {
+  name: 'AboutView',
   data() {
     return {
       userData: [],
@@ -29,6 +30,8 @@ export default {
       this.$axios.get('/userListOf5.json').then((res) => {
         this.userData = res.data;
         console.log(res.data)
+      }).catch((error) => {
+        console.log(error.message)
       });
     }
 
@@ -36,11 +39,12 @@ export default {
 };
 </script>
 <style>
-.user-info{
+.user-info {
   text-align: left;
 }
-.user-list{
+
+.user-list {
   text-align: center;
-  margin:0 auto;
+  margin: 0 auto;
 }
 </style>
