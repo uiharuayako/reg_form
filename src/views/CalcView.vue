@@ -1,7 +1,6 @@
 <template>
   <div class="calcview">
     <h1>这里是计算界面哦</h1>
-    <p>计算结果为：{{ this.evalResult }}</p>
     <h2>简易计算模式：</h2>
     <a-input-group compact>
       <a-input default-value="1" style="width: 20%" v-model="easyX"/>
@@ -35,8 +34,9 @@
     <h2>表达式计算模式：</h2>
     <a-textarea placeholder="键入需要计算的表达式" :rows="4" v-model="evalStr"/>
     <a-button @click="calcEval()">计算表达式</a-button>
+    <h4><b>计算结果为：{{ this.evalResult }}</b></h4>
     <h3>表达式计算历史记录</h3>
-    <a-list item-layout="horizontal" :data-source="calcHistory">
+    <a-list item-layout="horizontal" :data-source="calcHistory" bordered="true">
       <a-list-item slot="renderItem" slot-scope="item, index">
         {{ index + 1 }}:{{ item.eval }}={{ item.answer }}
       </a-list-item>
@@ -87,9 +87,9 @@ export default {
 <style scoped>
 .calcview {
   text-align: center;
-  margin: 0 auto;
   width: 50%;
   line-height: 50px;
   max-width: 450px;
+  margin: 20px auto;
 }
 </style>

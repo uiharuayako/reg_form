@@ -196,7 +196,7 @@ export default {
 <style>
 .home {
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
   width:50%;
   max-width: 450px;
 }
