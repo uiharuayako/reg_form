@@ -90,5 +90,6 @@ export default {
   margin: 0 auto;
   width: 50%;
   line-height: 50px;
+  max-width: 450px;
 }
 </style>
