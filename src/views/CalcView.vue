@@ -38,7 +38,7 @@
     <h3>表达式计算历史记录</h3>
     <a-list item-layout="horizontal" :data-source="calcHistory">
       <a-list-item slot="renderItem" slot-scope="item, index">
-        {{ index }}:{{ item.eval }}={{ item.answer }}
+        {{ index + 1 }}:{{ item.eval }}={{ item.answer }}
       </a-list-item>
     </a-list>
   </div>
