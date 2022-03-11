@@ -45,7 +45,7 @@ export default {
 
 .user-list {
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
   width:75%;
 }
 </style>
