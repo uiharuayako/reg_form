@@ -141,7 +141,7 @@ export default {
         wrapperCol: {
           xs: {
             span: 24,
-            offset: 8,
+            offset: 1,
           },
           sm: {
             span: 16,
