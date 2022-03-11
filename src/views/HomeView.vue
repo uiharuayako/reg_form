@@ -129,11 +129,11 @@ export default {
       confirmDirty: false,
       formItemLayout: {
         labelCol: {
-          xs: {span: 24},
+          xs: {span: 24,offset:-8},
           sm: {span: 8},
         },
         wrapperCol: {
-          xs: {span: 24},
+          xs: {span: 24,offset:-4},
           sm: {span: 16},
         },
       },
@@ -141,11 +141,11 @@ export default {
         wrapperCol: {
           xs: {
             span: 24,
-            offset: 2,
+            offset: 8,
           },
           sm: {
             span: 16,
-            offset: 8,
+            offset: 4,
           },
         },
       },
@@ -198,5 +198,5 @@ export default {
   text-align: center;
   margin: 0 auto;
   width:50%;
-};
+}
 </style>
