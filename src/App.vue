@@ -19,6 +19,12 @@
           简易计算器
         </router-link>
       </a-menu-item>
+      <a-menu-item key="AD">
+        <router-link to="/ads">
+          <a-icon type="sound" />
+          需求广告
+        </router-link>
+      </a-menu-item>
     </a-menu>
     <router-view/>
   </div>

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CalcView from "@/views/CalcView";
+import ADView from "@/views/ADView";
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ const routes = [
     path: '/calc',
     name: 'calc',
     component: CalcView
+  },
+  {
+    path: '/ads',
+    name: 'ads',
+    component: ADView
   }
 ]
 
