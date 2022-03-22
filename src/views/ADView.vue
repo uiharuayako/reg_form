@@ -128,7 +128,7 @@ export default {
       this.$refs.ADForm.validate(valid => {
         if (valid) {
           alert('您的广告已经成功提交捏!');
-          this.forms.push(this.form)
+          this.forms.push(JSON.parse(JSON.stringify(this.form)))
         } else {
           console.log('error submit!!');
           return false;
